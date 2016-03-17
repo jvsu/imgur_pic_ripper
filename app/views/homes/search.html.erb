@@ -1,0 +1,12 @@
+<%content_for :search do %>
+	<h1>RipPics</h1>
+	<form action='/query' method='post'> 
+		<input name="authenticity_token" value="<%= form_authenticity_token %>" type="hidden">
+		<input type='text' name='query' placeholder='Enter URL-Include HTTP or HTTPS' id='query'>
+		<input type='submit' value='Submit' id='submit' class='btn btn-success'>
+	</form>
+	<div id='imgur'>
+		<h4>Rip Photos From Other Sites</h4>
+		<a href="/imgur"><%= image_tag "HnJkrC5.gif" %></a>
+	</div>
+<%end %>

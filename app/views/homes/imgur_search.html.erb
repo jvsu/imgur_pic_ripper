@@ -1,0 +1,13 @@
+<%content_for :imgur do %>
+
+	<h1>RipImgur</h1>
+		<div id='imgur_search'>
+			<form action='/imgur_query' method='post'> 
+				<input name="authenticity_token" value="<%= form_authenticity_token %>" type="hidden">
+				<input type='text' name='query' placeholder='Enter URL-Include HTTP or HTTPS' id='query'>
+				<input type='submit' value='Submit' id='submit' class='btn btn-success'>
+			</form>
+			<a href="/homes" id='picrip_back' >PicRip</a>
+		</div>
+
+<%end %>

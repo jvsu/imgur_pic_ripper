@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>RipPics</title>
+  <%= stylesheet_link_tag    'pictures', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+	
+	<h1>RipPics</h1>
+	<div id='results'>
+		<%= yield :results%>
+	</div>
+</body>
+</html>

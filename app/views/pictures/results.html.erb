@@ -1,0 +1,17 @@
+
+<%content_for :results do %>
+<a href="/homes" class='btn btn-success' id='search_button'>Search</a>
+<h5>Select the Pictures You Want and Click Submit to Download</h5>
+<div id='results_container'>
+	<form action='/download' method='post'>
+		<input name="authenticity_token" value="<%= form_authenticity_token %>" type="hidden">
+			<%@pictures.each do |p| %>
+				<div class='picture_section'>
+					<%=image_tag p.image.url %>
+					<input type='checkbox' name="picture<%=p.id%>" value="<%=p.id %>" checked='checked' class='check_box'>
+				</div>
+			<% end%>
+		<input type='submit' value='Submit' class='btn btn-success' id='submit'>
+	</form>
+</div>
+<%end %>

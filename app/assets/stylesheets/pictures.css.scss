@@ -1,0 +1,55 @@
+// Place all the styles related to the pictures controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+ @import "bootstrap-sprockets";
+@import "bootstrap";
+
+
+.picture_section img{
+	display:block;
+	margin-top:15px;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+.picture_section input{
+ 	display:block;
+	width:25px;
+	height:25px;
+	margin-left:auto;
+	margin-right:auto;
+
+}
+.picture_section{
+	border:1px solid block;
+}
+
+#submit{
+	display:block;
+	width:100px;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:15px;
+	margin-bottom:100px;
+}
+h1{
+	text-align:center;
+	background-color:#337ab7;
+	color:white;
+	margin-top:0px;
+	padding:10px;
+}
+#search_button{
+	width:200px;
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+
+}
+h5{
+	text-align:center;
+
+}
+#results_container{
+	 overflow-y: hidden;
+}
